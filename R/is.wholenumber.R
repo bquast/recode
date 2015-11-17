@@ -1,7 +1,7 @@
 #' Check if numbers of integer value (not type)
 #' 
 #' @export
-#' 
+#' @param numeric object
 #' @examples 
 #' is.wholenumber(2)
 #' is.wholenumber(0.9)

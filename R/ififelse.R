@@ -1,6 +1,9 @@
 #' Extensible version of ifelse()
 #' 
 #' @export
+#' @param x data
+#' @param ... values to be replaced follow by replacement values, can be repeated
+#' @param else.value in case value is not included in the replace values
 #' @examples 
 #' # load and view x
 #' x(survey)

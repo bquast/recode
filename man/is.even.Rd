@@ -6,6 +6,9 @@
 \usage{
 is.even(x = NULL)
 }
+\arguments{
+\item{x}{a numerical object of integer value}
+}
 \description{
 Check if numbers are even
 }

@@ -6,6 +6,13 @@
 \usage{
 ififelse(x, ..., else.value = NULL)
 }
+\arguments{
+\item{x}{data}
+
+\item{...}{values to be replaced follow by replacement values, can be repeated}
+
+\item{else.value}{in case value is not included in the replace values}
+}
 \description{
 Extensible version of ifelse()
 }

@@ -6,6 +6,9 @@
 \usage{
 is.odd(x = NULL)
 }
+\arguments{
+\item{a}{numerical object of integer value}
+}
 \description{
 Check if numbers are odd
 }

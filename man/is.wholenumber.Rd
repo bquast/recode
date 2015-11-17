@@ -6,6 +6,9 @@
 \usage{
 is.wholenumber(x = NULL)
 }
+\arguments{
+\item{numeric}{object}
+}
 \description{
 Check if numbers of integer value (not type)
 }

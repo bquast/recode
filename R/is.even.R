@@ -1,6 +1,7 @@
 #' Check if numbers are even
 #' 
 #' @export
+#' @param x a numerical object of integer value
 #' @examples 
 #' is.even(2)
 #' is.even(5)
