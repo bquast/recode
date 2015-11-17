@@ -18,10 +18,16 @@ ififelse <- function(data, ..., else.value=NULL) {
   ellipsis <- data.frame(...)
   ellipsis <- data.frame(x = unlist(ellipsis[c(TRUE,FALSE)]),
                          y = unlist(ellipsis[c(FALSE,TRUE)]) )
-  out <- rep(else.value, length(data))
-  matched <- match(survey$gender, ellipsis[,1])
-  for (i in 1:dim(ellipsis)[1]) {
-    out[matched==i] <- ellipsis[i,2]
+  out <- vector(length=length(data))
+  matched <- match(data, ellipsis[,1])
+  for (i in 1:length(data)) {
+    if(data[i] %in% ellipsis$x) {
+      out[i] <- ellipsis[matched[i],2]
+    } else if(is.na(data[i])) {
+      out[i] <- NA
+    } else {
+      out[i] <- else.value
+    }
   }
   return(out)
 }
