@@ -2,7 +2,7 @@ Package: recode
 Title: Tools for recoding data
 Version: 0.0.0.9000
 Authors@R: person("Bastiaa", "Quast", email = "bquast@gmail.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Description: A set of tools for recoding data.
 Depends:
     R (>= 3.2.2)
 License: GPL-3
