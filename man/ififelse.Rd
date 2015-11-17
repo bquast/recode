@@ -18,7 +18,7 @@ Extensible version of ifelse()
 }
 \examples{
 # load and view x
-x(survey)
+data(survey)
 survey
 
 # inpect more closely

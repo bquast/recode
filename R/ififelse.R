@@ -6,7 +6,7 @@
 #' @param else.value in case value is not included in the replace values
 #' @examples 
 #' # load and view x
-#' x(survey)
+#' data(survey)
 #' survey
 #' 
 #' # inpect more closely
