@@ -4,7 +4,7 @@
 \alias{ififelse}
 \title{Extensible version of ifelse()}
 \usage{
-ififelse(data, a, x, b, y, z)
+ififelse(data, ..., else.value = NULL)
 }
 \description{
 Extensible version of ifelse()
@@ -18,7 +18,7 @@ survey
 table(survey)
 
 # recode
-survey$male <- ififelse(survey$gender, "Male", TRUE, "male", TRUE, FALSE)
+survey$male <- ififelse(survey$gender, "Male", TRUE, "male", TRUE, else.value=FALSE)
 
 }
 

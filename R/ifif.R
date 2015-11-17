@@ -10,10 +10,18 @@
 #' table(survey)
 #' 
 #' # recode
-#' survey$male <- ififelse(survey$gender, "Male", TRUE, "male", TRUE, FALSE)
+#' survey$male <- ififelse(survey$gender, "Male", TRUE, "male", TRUE, else.value=FALSE)
 #' 
 
 
-ififelse <- function(data, a, x, b, y, z) {
-  ifelse(data == a, x, ifelse(data == b, y, z))
+ififelse <- function(data, ..., else.value=NULL) {
+  ellipsis <- data.frame(...)
+  ellipsis <- data.frame(x = unlist(ellipsis[c(TRUE,FALSE)]),
+                         y = unlist(ellipsis[c(FALSE,TRUE)]) )
+  out <- rep(else.value, length(data))
+  matched <- match(survey$gender, ellipsis[,1])
+  for (i in 1:dim(ellipsis)[1]) {
+    out[matched==i] <- ellipsis[i,2]
+  }
+  return(out)
 }
