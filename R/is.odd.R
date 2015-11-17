@@ -1,7 +1,7 @@
 #' Check if numbers are odd
 #' 
 #' @export
-#' @param a numerical object of integer value
+#' @param x numerical object of integer value
 #' @examples 
 #' is.odd(2)
 #' is.odd(5)
