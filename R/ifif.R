@@ -14,6 +14,6 @@
 #' 
 
 
-ififelse <- function(data, ..., z) {
+ififelse <- function(data, a, x, b, y, z) {
   ifelse(data == a, x, ifelse(data == b, y, z))
 }
